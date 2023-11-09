@@ -1,0 +1,267 @@
+import React from 'react'
+import Person from './Person';
+
+const persons = [
+  {
+    ID: "1",
+    EmailAddress: "Bryon_Bolton8591@evyvh.ca",
+    FirstNameLastName: "Bryon Bolton",
+  },
+  {
+    ID: "2",
+    EmailAddress: "Rick_Woodcock8291@lyvnc.net",
+    FirstNameLastName: "Rick Woodcock",
+  },
+  {
+    ID: "3",
+    EmailAddress: "Denis_Nanton6887@evyvh.pro",
+    FirstNameLastName: "Denis Nanton",
+  },
+  {
+    ID: "4",
+    EmailAddress: "Bart_Jackson9033@1kmd3.design",
+    FirstNameLastName: "Bart Jackson",
+  },
+  {
+    ID: "5",
+    EmailAddress: "Tyler_Dallas6248@jcf8v.store",
+    FirstNameLastName: "Tyler Dallas",
+  },
+  {
+    ID: "6",
+    EmailAddress: "Chris_Hudson2504@cdpfn.biz",
+    FirstNameLastName: "Chris Hudson",
+  },
+  {
+    ID: "7",
+    EmailAddress: "Remy_Dixon1750@zynuu.app",
+    FirstNameLastName: "Remy Dixon",
+  },
+  {
+    ID: "8",
+    EmailAddress: "Michael_Marshall3657@nb44i.shop",
+    FirstNameLastName: "Michael Marshall",
+  },
+  {
+    ID: "9",
+    EmailAddress: "Bart_Mitchell2532@voylg.website",
+    FirstNameLastName: "Bart Mitchell",
+  },
+  {
+    ID: "10",
+    EmailAddress: "Clint_Woods2217@xqj6f.business",
+    FirstNameLastName: "Clint Woods",
+  },
+  {
+    ID: "11",
+    EmailAddress: "Bridget_Casey2167@xtwt3.store",
+    FirstNameLastName: "Bridget Casey",
+  },
+  {
+    ID: "12",
+    EmailAddress: "Kamila_Haines1187@urn0m.club",
+    FirstNameLastName: "Kamila Haines",
+  },
+  {
+    ID: "13",
+    EmailAddress: "Grace_Moss5201@v1wn5.shop",
+    FirstNameLastName: "Grace Moss",
+  },
+  {
+    ID: "14",
+    EmailAddress: "Makenzie_Whitehouse5664@jh02o.meet",
+    FirstNameLastName: "Makenzie Whitehouse",
+  },
+  {
+    ID: "15",
+    EmailAddress: "Juliette_Jackson1208@dbxli.mobi",
+    FirstNameLastName: "Juliette Jackson",
+  },
+  {
+    ID: "16",
+    EmailAddress: "Angelina_Devonport7792@bu2lo.tech",
+    FirstNameLastName: "Angelina Devonport",
+  },
+  {
+    ID: "17",
+    EmailAddress: "Russel_Long2256@yfxpw.org",
+    FirstNameLastName: "Russel Long",
+  },
+  {
+    ID: "18",
+    EmailAddress: "Phillip_Curtis7657@fhuux.info",
+    FirstNameLastName: "Phillip Curtis",
+  },
+  {
+    ID: "19",
+    EmailAddress: "Doug_Emmott612@fhuux.video",
+    FirstNameLastName: "Doug Emmott",
+  },
+  {
+    ID: "20",
+    EmailAddress: "Wendy_Stevenson365@yfxpw.audio",
+    FirstNameLastName: "Wendy Stevenson",
+  },
+  {
+    ID: "21",
+    EmailAddress: "Darlene_Kelly916@ptr6k.business",
+    FirstNameLastName: "Darlene Kelly",
+  },
+  {
+    ID: "22",
+    EmailAddress: "Kurt_Murray5159@avn7d.com",
+    FirstNameLastName: "Kurt Murray",
+  },
+  {
+    ID: "23",
+    EmailAddress: "Nicholas_Wright6147@1kmd3.info",
+    FirstNameLastName: "Nicholas Wright",
+  },
+  {
+    ID: "24",
+    EmailAddress: "Rufus_Neville1311@cke3u.software",
+    FirstNameLastName: "Rufus Neville",
+  },
+  {
+    ID: "25",
+    EmailAddress: "Cadence_Rowlands9673@iscmr.mobi",
+    FirstNameLastName: "Cadence Rowlands",
+  },
+  {
+    ID: "26",
+    EmailAddress: "Daron_King7997@v1wn5.audio",
+    FirstNameLastName: "Daron King",
+  },
+  {
+    ID: "27",
+    EmailAddress: "George_Palmer3564@karnv.org",
+    FirstNameLastName: "George Palmer",
+  },
+  {
+    ID: "28",
+    EmailAddress: "Taylor_Neville5029@dvqq2.video",
+    FirstNameLastName: "Taylor Neville",
+  },
+  {
+    ID: "29",
+    EmailAddress: "Kimberly_Latham854@d9un8.solutions",
+    FirstNameLastName: "Kimberly Latham",
+  },
+  {
+    ID: "30",
+    EmailAddress: "Kimberly_Forth1328@dbxli.net",
+    FirstNameLastName: "Kimberly Forth",
+  },
+  {
+    ID: "31",
+    EmailAddress: "Daniel_Giles7281@xtwt3.org",
+    FirstNameLastName: "Daniel Giles",
+  },
+  {
+    ID: "32",
+    EmailAddress: "Kendra_Rivers4524@c2nyu.video",
+    FirstNameLastName: "Kendra Rivers",
+  },
+  {
+    ID: "33",
+    EmailAddress: "Roger_Parker9103@iscmr.com",
+    FirstNameLastName: "Roger Parker",
+  },
+  {
+    ID: "34",
+    EmailAddress: "Rocco_West6968@bqkv0.solutions",
+    FirstNameLastName: "Rocco West",
+  },
+  {
+    ID: "35",
+    EmailAddress: "Jaylene_Sherwood687@yfxpw.video",
+    FirstNameLastName: "Jaylene Sherwood",
+  },
+  {
+    ID: "36",
+    EmailAddress: "Norah_Ellis6041@6ijur.business",
+    FirstNameLastName: "Norah Ellis",
+  },
+  {
+    ID: "37",
+    EmailAddress: "David_Smith9224@yafr7.name",
+    FirstNameLastName: "David Smith",
+  },
+  {
+    ID: "38",
+    EmailAddress: "Harvey_Hall7004@voylg.media",
+    FirstNameLastName: "Harvey Hall",
+  },
+  {
+    ID: "39",
+    EmailAddress: "Nicole_Fox3035@cdpfn.host",
+    FirstNameLastName: "Nicole Fox",
+  },
+  {
+    ID: "40",
+    EmailAddress: "Rihanna_Booth547@voylg.com",
+    FirstNameLastName: "Rihanna Booth",
+  },
+  {
+    ID: "41",
+    EmailAddress: "Rihanna_Smith7069@gkvds.services",
+    FirstNameLastName: "Rihanna Smith",
+  },
+  {
+    ID: "42",
+    EmailAddress: "Mara_Sherry6562@chkzl.info",
+    FirstNameLastName: "Mara Sherry",
+  },
+  {
+    ID: "43",
+    EmailAddress: "Aurelia_Ross5292@hepmv.org",
+    FirstNameLastName: "Aurelia Ross",
+  },
+  {
+    ID: "44",
+    EmailAddress: "Manuel_Saunders2069@yahoo.name",
+    FirstNameLastName: "Manuel Saunders",
+  },
+  {
+    ID: "45",
+    EmailAddress: "Leroy_Stewart8583@iaart.club",
+    FirstNameLastName: "Leroy Stewart",
+  },
+  {
+    ID: "46",
+    EmailAddress: "Bryon_Sawyer5052@dbxli.digital",
+    FirstNameLastName: "Bryon Sawyer",
+  },
+  {
+    ID: "47",
+    EmailAddress: "Logan_Uddin3301@cdpfn.services",
+    FirstNameLastName: "Logan Uddin",
+  },
+  {
+    ID: "48",
+    EmailAddress: "Marilyn_Redden3817@lyvnc.digital",
+    FirstNameLastName: "Marilyn Redden",
+  },
+  {
+    ID: "49",
+    EmailAddress: "Trisha_Clark3427@lyvnc.store",
+    FirstNameLastName: "Trisha Clark",
+  },
+  {
+    ID: "50",
+    EmailAddress: "Greta_Lunt1616@gkvds.audio",
+    FirstNameLastName: "Greta Lunt",
+  },
+];
+
+const Persons = () => {
+  return (
+    <div className='cards'>
+      {persons.map((person) => {
+        return <Person key={person.ID} {...person} />;
+      })}
+    </div>
+  )
+}
+
+export default Persons
