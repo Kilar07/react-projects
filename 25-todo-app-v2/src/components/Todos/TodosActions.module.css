@@ -1,0 +1,6 @@
+.directBtns{
+  display: flex;
+  justify-content: space-between;
+  max-width: 130px;
+  margin: 0 auto;
+}
